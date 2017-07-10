@@ -1,0 +1,5 @@
+vagrant up
+# connect with browser to http://192.168.33.10:5984/_utils
+vagrant ssh
+npm install --save-dev mocha
+npm test
