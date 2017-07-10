@@ -4,4 +4,16 @@
 
 <p>Welcome to subproject</p>
 
+<% rows.forEach(function(doc) { %>
+<div>Name: <%= doc.id %>, Happy: <%= doc.happy %></div>
+<% }); %>
+
+<form method="GET" action="/add" >
+  <label for="name">Name</label>
+  <input type="textarea" id="name" name="name">
+  <label for="happy">Happy</label>
+  <input type="checkbox" id="happy" name="happy">
+  <button type="submit">Add</button>
+</form>
+
 <% include partials/footer %>
